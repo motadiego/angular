@@ -1,7 +1,7 @@
 # Angular
 
 Projetos exemplos do curso da udemmy https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/learn/lecture/7071642?start=0#overview
-<li>alculadora</li>
+<li>calculadora</li>
 <li>conversor-de-moedas</li>
 <li>dashboard</li>
 <li>gerenciador-de-tarefas</li>
@@ -10,10 +10,10 @@ Projetos exemplos do curso da udemmy https://www.udemy.com/course/formacao-angul
 <li>sistema-pedido</li>
 
 Projeto exemplo do curso da udemmy https://www.udemy.com/course/curso-de-angular-2-5-avancado/
-</li>sistema-ponto</li>
+<li>sistema-ponto</li>
 
 Projetos exemplos do curso da loiane https://loiane.training/continuar-curso/angular
-</li>curso-angular-loiane</li>
+<li>curso-angular-loiane</li>
 
 
 
