@@ -18,7 +18,7 @@ Projetos exemplos do curso da loiane https://loiane.training/continuar-curso/ang
 <li>curso-angular-loiane</li>
 
 
-
+<br><br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
 ## Development server
