@@ -1,6 +1,13 @@
 # Angular
 
 Projetos exemplos do curso da udemmy https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/learn/lecture/7071642?start=0#overview
+-calculadora
+-conversor-de-moedas
+-dashboard
+-gerenciador-de-tarefas
+-jogo-da-velha
+-ola-mundo
+-sistema-pedido
 
 Projeto exemplo do curso da udemmy https://www.udemy.com/course/curso-de-angular-2-5-avancado/
 - sistema-ponto
