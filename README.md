@@ -1,6 +1,6 @@
 # Angular
 
--Projetos exemplos do curso da udemmy https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/learn/lecture/7071642?start=0#overview
+Projetos exemplos do curso da udemmy https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/learn/lecture/7071642?start=0#overview
 <li>calculadora</li>
 <li>conversor-de-moedas</li>
 <li>dashboard</li>
@@ -9,12 +9,12 @@
 <li>ola-mundo</li>
 <li>sistema-pedido</li>
 
-
--Projeto exemplo do curso da udemmy https://www.udemy.com/course/curso-de-angular-2-5-avancado/
+<br>
+Projeto exemplo do curso da udemmy https://www.udemy.com/course/curso-de-angular-2-5-avancado/
 <li>sistema-ponto</li>
 
-
--Projetos exemplos do curso da loiane https://loiane.training/continuar-curso/angular
+<br>
+Projetos exemplos do curso da loiane https://loiane.training/continuar-curso/angular
 <li>curso-angular-loiane</li>
 
 
