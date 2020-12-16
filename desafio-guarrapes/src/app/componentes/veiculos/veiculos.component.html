@@ -1,0 +1,44 @@
+<style>
+  .btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
+    border-color: transparent;
+    outline: none;
+  }
+  </style>
+
+  <h4>
+  <a (click)="paginaInicial()">
+      Home
+  </a>
+  </h4>
+
+  <h1>Veículos</h1>
+
+  <table class="table table-striped table-bordered table-hover">
+    <thead  class="thead-dark">
+        <tr>
+          <th>Nome</th>
+          <th>Modelo</th>
+          <th>Fabricante</th>
+          <th>Preço</th>
+          <th>Comprimento</th>
+          <th>Passageiros</th>
+          <th>Classe do veículo</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let veiculo of veiculos">
+          <td>{{veiculo.name}} </td>
+          <td>{{veiculo.model}}</td>
+          <td>{{veiculo.manufacturer}}</td>
+          <td>{{veiculo.cost_in_credits}}</td>
+          <td>{{veiculo.length}}</td>
+          <td>{{veiculo.passengers}}</td>
+          <td>{{veiculo.vehicle_class}}</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <input type="submit" value="Anterior"  type="submit" class="btn btn-success" (click)="anterior()" [disabled]="!isPaginaAnterior">
+  {{page}}
+  <input type="submit" value="Prómimo" type="submit" class="btn btn-success" (click)="proximo()" [disabled]="!isProximaPagina">

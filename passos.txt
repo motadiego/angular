@@ -1,0 +1,14 @@
+1 - criar uma nova aplicacao
+ng new nome_da_aplicacao
+
+2 - ver se foi criado corretamente / subir a aplicação
+ng serve
+
+3 - criar um módulo (geralmente mesmo nome da aplicacao)
+ng g module nome_do_modulo
+
+4- criar um componente
+ng g component nome_do_componente
+
+5- criar um servico
+ng g service nome_do_servico

@@ -1,0 +1,59 @@
+<h1>Cadastrar cliente</h1>
+
+<div class="well">
+  <form #formCliente="ngForm">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text"  [(ngModel)]="cliente.nome"
+        #nome="ngModel" class="form-control" id="nome" name="nome" required>
+
+      <div *ngIf="nome.errors && (nome.dirty || nome.touched)"  class="alert alert-danger">
+        <div [hidden]="!nome.errors.required">
+           Digite o nome
+        </div>
+      </div>
+
+      <label for="cpf">Cpf:</label>
+      <input type="text" [(ngModel)]="cliente.cpf"
+        #cpf="ngModel" class="form-control" id="cpf" name="cpf" minlength="11" maxlength="11" required>
+
+      <div *ngIf="cpf.errors && (cpf.dirty || cpf.touched)" class="alert alert-danger">
+        <div [hidden]="!cpf.errors.required">
+           Digite o CPF
+        </div>
+        <div [hidden]="!cpf.errors.minlength">
+          O CPF deve conter 11 caracteres.
+        </div>
+      </div>
+
+      <label for="dataNasc">Data de Nascimento:</label>
+      <input type="text" [(ngModel)]="cliente.dataNascimento"
+        #dataNascimento="ngModel" class="form-control" id="dataNas" name="dataNas" required>
+
+      <div *ngIf="dataNascimento.errors && (dataNascimento.dirty || dataNascimento.touched)" class="alert alert-danger">
+        <div [hidden]="!dataNascimento.errors.required">
+           Digite a data de nascimento
+        </div>
+      </div>
+
+      <label for="nome">Endereco:</label>
+      <input type="text" [(ngModel)]="cliente.endereco"
+          #endereco="ngModel"  class="form-control" id="endereco" name="endereco" required>
+
+      <div *ngIf="endereco.errors && (endereco.dirty || endereco.touched)"  class="alert alert-danger">
+        <div [hidden]="!endereco.errors.required">
+           Digite o endereço
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group text-center">
+      <input type="submit" class="btn btn-success" value="Cadastrar"
+        (click)="cadastrar()" [disabled]="!formCliente.form.valid">
+      <a [routerLink]="['/clientes']" class="btn btn-default">
+        <span class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"></span> Voltar
+      </a>
+    </div>
+  </form>
+</div>

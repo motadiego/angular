@@ -1,0 +1,23 @@
+<h1>Fotos</h1>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead  class="thead-dark">
+      <tr>
+        <th>Id</th>
+        <th>Título</th>
+        <th>Miniatura</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let foto of fotos">
+        <td>{{foto.id}} </td>
+        <td>{{foto.title}}</td>
+        <td align="center">
+          <img src="https://via.placeholder.com/150/92c952" />
+        </td>
+      </tr>
+  </tbody>
+</table>
+<input type="submit" value="Voltar" type="submit" class="btn btn-success" (click)="voltarListagemAlbums()">
+
+

@@ -1,0 +1,41 @@
+<style>
+  .btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
+    border-color: transparent;
+    outline: none;
+  }
+  </style>
+
+  <h4>
+  <a (click)="paginaInicial()">
+      Home
+  </a>
+  </h4>
+
+  <h1>Planetas</h1>
+
+  <table class="table table-striped table-bordered table-hover">
+    <thead  class="thead-dark">
+        <tr>
+          <th>Nome</th>
+          <th>Período de rotação</th>
+          <th>Diâmetro</th>
+          <th>Clima</th>
+          <th>Gravidade</th>
+          <th>População</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let planeta of planetas">
+          <td>{{planeta.name}} </td>
+          <td>{{planeta.rotation_period}}</td>
+          <td>{{planeta.diameter}}</td>
+          <td>{{planeta.climate}}</td>
+          <td>{{planeta.gravity}}</td>
+          <td>{{planeta.population}}</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <input type="submit" value="Anterior"  type="submit" class="btn btn-success" (click)="anterior()" [disabled]="!isPaginaAnterior">
+  {{page}}
+  <input type="submit" value="Prómimo" type="submit" class="btn btn-success" (click)="proximo()" [disabled]="!isProximaPagina">
